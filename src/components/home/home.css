@@ -65,3 +65,10 @@
    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.705);
    text-decoration: none;
  }
+
+.rate-component {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-top: 20%;
+    font-family: 'Ropa Sans', sans-serif;
+}

@@ -10,8 +10,8 @@ export function Rating() {
         <div>
             <h2 className='title-rating'>Rating</h2>
             <div>
-                {[...Array(5)].map((star, i) => {
-                    const ratingValue = i + 1;
+                {[...Array(5)].map((star, index) => {
+                const ratingValue= index += 1;
 
                     return (
                         <label>
@@ -19,7 +19,7 @@ export function Rating() {
                                 type='radio' 
                                 name='rating' 
                                 value={ratingValue} 
-                                onClick={() => setRating(ratingValue)} 
+                                onClick={() => setRating(ratingValue)}
                             />
                             <FaStar 
                                 className='star' 
@@ -31,7 +31,7 @@ export function Rating() {
                         </label>
                     );
                 })}
-                <p>The rating is: {rating}</p>
+                <div>The rating is: {rating}</div>
             </div>
         </div>
     )

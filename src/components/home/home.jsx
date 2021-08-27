@@ -25,7 +25,7 @@ export function Comic() {
     }
 
     const currentNum = () => {
-        randomNum(comic.num - 1)
+        randomNum(Math.round(Math.random() * (comic.num - 1) + 1))
     }
 
     return (
@@ -33,8 +33,8 @@ export function Comic() {
             <h1 className='logo'>RANDOM COMICS</h1>
             <img className='comic-image'src={comic.img} alt='' />
             <h1 className='comic-title'>Title: <br/>{comic.title}</h1>
-            <div><Rating /></div>
-            <button className='comic-button'onClick={currentNum}>Next comic!</button>
+            <label className='rate-component'><Rating /></label>
+            <button className='comic-button' onClick={currentNum}>Next comic!</button>
         </div>
     )
 
