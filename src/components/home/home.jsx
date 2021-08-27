@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './home.css'
+import { Rating } from '../rate/rate'
 
 export function Comic() {
     const [comic, setComic] = useState(null);
@@ -31,8 +32,9 @@ export function Comic() {
         <div className='comics-container'> 
             <h1 className='logo'>RANDOM COMICS</h1>
             <img className='comic-image'src={comic.img} alt='' />
-            <div className='comic-title'>Title: {comic.title}</div>
-            <button className='comic-button'onClick={currentNum}>🔀</button>
+            <h1 className='comic-title'>Title: <br/>{comic.title}</h1>
+            <div><Rating /></div>
+            <button className='comic-button'onClick={currentNum}>Click here!</button>
         </div>
     )
 
