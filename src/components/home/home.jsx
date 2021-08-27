@@ -34,7 +34,7 @@ export function Comic() {
             <img className='comic-image'src={comic.img} alt='' />
             <h1 className='comic-title'>Title: <br/>{comic.title}</h1>
             <div><Rating /></div>
-            <button className='comic-button'onClick={currentNum}>Click here!</button>
+            <button className='comic-button'onClick={currentNum}>Next comic!</button>
         </div>
     )
 
