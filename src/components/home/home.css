@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Ropa+Sans&display=swap');
+
+.comics-container{
+    display: grid;
+    background-color: transparent;
+    align-items: center;
+}
+.logo {
+    display: block;
+    color: #ffffff;
+    font-family: 'Luckiest Guy';
+    font-size: 700%;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+    margin: 15px;
+    margin-top: 50px;
+}
+
+.comic-title {
+    display: block;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 200%;
+    text-align: center;
+    margin: 30px;
+}
+.comic-image {
+    display: block;
+    width: 400px;
+    height: 400px;
+    justify-self:flex-start;
+    margin-left: 17%;
+    
+    
+}
+
+.comic-button {
+    width: 100px;
+    height: 100px;
+}

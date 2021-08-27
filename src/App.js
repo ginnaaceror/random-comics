@@ -1,4 +1,5 @@
 import { Comic } from './components/home/home'
+import './App.css'
 
 export function App() {
   return (
